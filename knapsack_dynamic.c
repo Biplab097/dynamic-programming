@@ -32,7 +32,24 @@ int main(int argc[],char const * argv[])
         }
     }
     
-    printf("%d ",k[n][m]);
+    printf("%d \n",k[n][m]);
+    int i=n,j=m;
+    while(i>0&&j>0)
+    {
+        if(k[i][j]==k[i-1][j])
+        {
+          printf("%d element not included ",i);
+          i--;
+        }
+        else  
+        {
+          printf("%d element included ",i);
+          j=j-W[i];
+          i--;
+          
+        }
+    }
+    printf("\nknapsack full ");
    
 
 return 0;
