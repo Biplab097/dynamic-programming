@@ -38,7 +38,6 @@ int main(int argc[],char const * argv[])
 return 0;
 }
 int max(int x,int y){
-    printf("coming");
     if(x>y)return x;
     else return y;
 }
